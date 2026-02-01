@@ -29,3 +29,46 @@ html, body {
   color: black;
 }
 
+.nav-btn {
+  position: relative;
+  padding: 10px 16px;
+  text-align: left;
+  border-radius: 14px;
+  background: transparent;
+  border: none;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* hover */
+.nav-btn:hover {
+  transform: scale(0.95);
+}
+
+/* active */
+.nav-active {
+  background: white;
+}
+
+.nav-active::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #ffd6ec,
+    #e6ccff,
+    #cfe8ff,
+    #ffffff
+  );
+  background-size: 300% 300%;
+  animation: nav-border 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes nav-border {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
