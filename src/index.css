@@ -47,7 +47,7 @@ html, body {
 
 /* active */
 .nav-active {
-  background: #fbfbfb;
+  background: white;
 }
 
 .nav-active::before {
