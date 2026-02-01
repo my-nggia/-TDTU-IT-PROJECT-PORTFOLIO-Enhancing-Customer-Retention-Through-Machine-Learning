@@ -42,7 +42,6 @@ html, body {
 /* hover */
 .nav-btn:hover {
   transform: scale(0.95);
-  background: #fbfbfb;
 }
 }
 
