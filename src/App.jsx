@@ -97,27 +97,28 @@ export default function App() {
     <div className="relative min-h-screen font-sans text-neutral-900">
       
       {/* LEFT NAV */}
-      <aside className="hidden md:flex fixed left-16 top-1/2 -translate-y-1/2 flex-col gap-3 text-sm w-48">
+      <aside className="
+        hidden md:flex
+        fixed left-16 top-1/2 -translate-y-1/2
+        flex-col gap-3
+        text-sm
+        w-52
+      ">
         {sections.map((s) => (
           <button
             key={s.id}
             onClick={() => scrollTo(s.id)}
             className={`
-              w-full text-left
-              px-4 py-2 rounded-xl
-              transition-all duration-300
-              hover:scale-95
-              ${
-                active === s.id
-                  ? "nav-active"
-                  : "bg-white text-neutral-400 hover:text-neutral-800"
+              nav-btn w-full text-left
+              ${active === s.id
+                ? "nav-active text-black"
+                : "text-neutral-400 hover:text-neutral-800"
               }
             `}
           >
             {s.label}
           </button>
-
-      ))}
+        ))}
       </aside>
 
       {/* CONTENT */}
