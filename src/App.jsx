@@ -1251,6 +1251,7 @@ export default function App() {
           fixed bottom-0 left-0 right-0
           text-center text-sm
           text-neutral-500
+          bg-white/50 backdrop-blur
           py-3
         ">
           Built by Gia-My Nguyen, collaborate with Keni Nicholas Ondang · 2026
