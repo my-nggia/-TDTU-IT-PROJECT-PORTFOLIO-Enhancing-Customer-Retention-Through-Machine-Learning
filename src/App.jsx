@@ -1248,10 +1248,12 @@ export default function App() {
 
         {/* FOOTER */}
         <footer className="
-          fixed bottom-0 left-0 right-0
-          text-center text-sm
-          text-neutral-500
+          fixed bottom-4
+          right-8
+          text-xs
           bg-white/50 backdrop-blur
+          text-neutral-400
+          tracking-wide
           py-3
         ">
           Built by Gia-My Nguyen, collaborate with Keni Nicholas Ondang · 2026
